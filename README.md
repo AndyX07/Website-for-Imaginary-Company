@@ -22,3 +22,7 @@ Start website:
 ```
 npm start
 ```
+
+Cart will be at http://localhost:3500/cart
+<br/>
+User feedback will be at http://localhost:3500/feedback
