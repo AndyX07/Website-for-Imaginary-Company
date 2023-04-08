@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Website-for-Imaginary-Company/static/css/main.3901b558.css",
+    "main.js": "/Website-for-Imaginary-Company/static/js/main.3f7d4053.js",
+    "static/media/background.webp": "/Website-for-Imaginary-Company/static/media/background.a0a50278c3ebe617044f.webp",
+    "static/media/windows.png": "/Website-for-Imaginary-Company/static/media/windows.3da521516b906ad538c1.png",
+    "static/media/businessAward.png": "/Website-for-Imaginary-Company/static/media/businessAward.b6e43ef825733141e4de.png",
+    "static/media/systemdiagnosis.jpg": "/Website-for-Imaginary-Company/static/media/systemdiagnosis.04683ca9c4892dab0b8f.jpg",
+    "static/media/fiveStars.png": "/Website-for-Imaginary-Company/static/media/fiveStars.5189107a68a14ec0ad33.png",
+    "static/media/virusremoval.jpg": "/Website-for-Imaginary-Company/static/media/virusremoval.f68b4394c83b98d97d8b.jpg",
+    "static/media/consumerChoice.png": "/Website-for-Imaginary-Company/static/media/consumerChoice.6410e3c14ce3f4aa8920.png",
+    "static/media/thumb.png": "/Website-for-Imaginary-Company/static/media/thumb.96d93a1044c0747f3cc3.png",
+    "static/media/databackup.jpg": "/Website-for-Imaginary-Company/static/media/databackup.7f59b5e5d3cf79a492bc.jpg",
+    "static/media/virusremoval1.png": "/Website-for-Imaginary-Company/static/media/virusremoval1.1666316702b8a35c4a7b.png",
+    "static/media/person2.jpg": "/Website-for-Imaginary-Company/static/media/person2.b7dfaa685fa77d98cf1f.jpg",
+    "static/media/logo.png": "/Website-for-Imaginary-Company/static/media/logo.ca23a53adad4b393beaf.png",
+    "static/media/databackup1.png": "/Website-for-Imaginary-Company/static/media/databackup1.6eec1b7b90168742525d.png",
+    "static/media/apple.png": "/Website-for-Imaginary-Company/static/media/apple.5a7201c5f85428e2fd8a.png",
+    "static/media/award.png": "/Website-for-Imaginary-Company/static/media/award.76199ea46ff907cf6306.png",
+    "static/media/systemdiagnostic1.png": "/Website-for-Imaginary-Company/static/media/systemdiagnostic1.9c0059468533b8ed4bd9.png",
+    "index.html": "/Website-for-Imaginary-Company/index.html",
+    "main.3901b558.css.map": "/Website-for-Imaginary-Company/static/css/main.3901b558.css.map",
+    "main.3f7d4053.js.map": "/Website-for-Imaginary-Company/static/js/main.3f7d4053.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3901b558.css",
+    "static/js/main.3f7d4053.js"
+  ]
+}
