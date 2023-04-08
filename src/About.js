@@ -1,21 +1,37 @@
+import { useState, useEffect } from 'react';
+
 const About = () => {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+        const observer = new IntersectionObserver((entries)=>{
+            entries.forEach((entry)=>{
+              if(entry.isIntersecting){
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+              }
+            });
+          });
+        
+          const hiddenElements = document.querySelectorAll('.hidden');
+          hiddenElements.forEach((element) => observer.observe(element));
+    }, [])
     return (
        <div class = 'home'>
-        <div style = {{backgroundColor: "beige"}}>
+        <div class = "hidden">
         <h1 id="C1">Who we Are</h1>
         <p>We're committed to fixing your broken electronic devices. We are committed to offer you the best customer service possible and offering you the best possible experience at our store.</p>
         <img src={require('./images/logo.png')} class="i1"/>
         </div>
         
-        <div style = {{backgroundColor: "#e8cf99"}}>
+        <div class = "hidden">
         <h1>Our Mission</h1>
         <p>We’re a company dedicated to putting customers first, offering our customers the best services and providing the best customer service.</p>
         </div>
         
-        <div style = {{backgroundColor: "beige"}}>
+        <div>
         <h1>Awards</h1>
         <table>
-            <tr>
+            <tr class = "hidden">
             <td>
                 <img src={require('./images/fiveStars.png')} id="image1"/>
             </td>
@@ -25,7 +41,7 @@ const About = () => {
                 </h2>
             </td>
             </tr>
-            <tr>
+            <tr class = "hidden">
             <td>
                 <img src={require('./images/consumerChoice.png')} id="image2"/>
             </td>
@@ -35,7 +51,7 @@ const About = () => {
                 </h2>
             </td>
             </tr>
-            <tr>
+            <tr class = "hidden">
             <td>
                 <img src={require('./images/businessAward.png')} id="image3"/>
             </td>

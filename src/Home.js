@@ -1,54 +1,71 @@
+import { useState, useEffect } from 'react';
+
 const Home = ({feedback, setFeedback, email, setEmail, handleSubmit}) => {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+        const observer = new IntersectionObserver((entries, observer)=>{
+            entries.forEach((entry)=>{
+              if(entry.isIntersecting){
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+              }
+            });
+          });
+        
+          const hiddenElements = document.querySelectorAll('.hidden');
+          hiddenElements.forEach((element) => observer.observe(element));
+    }, [])
     return (
        <div class = 'home'>
             <div id="background1">
                 <img src={require('./images/logo.png')}  class="i1"/>
             </div>
-            <div style = {{backgroundColor: "beige"}}>
-            <h1 id="A1">What We Do</h1>
-            <h2>
+            <div>
+            <h1 id="A1" class = "hidden">What We Do</h1>
+            <h2 class = "hidden">
                 Windows Repair
             </h2>
-            <p>
+            <p class = "hidden">
                 We will repair any Windows device and resolve any issues such as updating and device repair.
             </p>
             <img
-                src={require('./images/windows.jpg')}  />
-            <h2>
+                src={require('./images/windows.png')} class = "hidden" />
+            <h2 class = "hidden">
                 Apple Repair
             </h2>
-            <p>
+            <p class = "hidden">
                 We will repair any Apple device and resolve any issues such as upgrading and screen repair.
             </p>
-            <img src={require('./images/apple.png')}  />
-            <h2>
+            <img src={require('./images/apple.png')} class = "hidden" />
+            <h2 class = "hidden">
                 System Diagnosis
             </h2>
-            <p>
+            <p class = "hidden">
                 We will diagnose any problems you have with your system.
             </p>
             </div>
             
-            <div style = {{backgroundColor: "beige"}}>
+            <div>
             <h1 id="A2">Why Choose Us?</h1>
             <table class="t2">
             <tr>
-                <td class="table2"><img src={require('./images/moneySymbol.webp')} />
+                <td class="hidden"><img src={require('./images/moneySymbol.png')} />
                 <h2>Cheaper Prices</h2>
                 </td>
-                <td class="table2"><img src={require('./images/thumb.png')} />
+                <td class="hidden"><img src={require('./images/thumb.png')} />
                 <h2>Reliable</h2>
                 </td>
-                <td class="table2"><img src={require('./images/award.png')} />
+                <td class="hidden"><img src={require('./images/award.png')} />
                 <h2>30+ Years of Experience</h2>
                 </td>
             </tr>
             </table>
             </div>
-            <div style = {{backgroundColor: "#f2d38f"}}>
-                <h1 id="A3">Testimonial</h1>
+            <div>
+                <h1 id="A3" class = "hidden">Testimonial</h1>
                 <table>
-                <tr>
+                <tr class = "hidden">
                     <td><img
                         src={require('./images/person1.jpg')} 
                         class="testimonialimage" /> </td>
@@ -60,7 +77,7 @@ const Home = ({feedback, setFeedback, email, setEmail, handleSubmit}) => {
                     <h2 class="name">-John S.</h2>
                     </td>
                 </tr>
-                <tr>
+                <tr class = "hidden">
                     <td><img
                         src={require('./images/person2.jpg')} 
                         class="testimonialimage" /></td>
@@ -71,7 +88,7 @@ const Home = ({feedback, setFeedback, email, setEmail, handleSubmit}) => {
                     <h2 class="name">-William J.</h2>
                     </td>
                 </tr>
-                <tr>
+                <tr class = "hidden">
                     <td><img
                         src={require('./images/person3.png')} 
                         class="testimonialimage" /></td>
@@ -85,7 +102,7 @@ const Home = ({feedback, setFeedback, email, setEmail, handleSubmit}) => {
                 </tr>
                 </table>
             </div>
-            <div style = {{backgroundColor: "beige"}}>
+            <div class = "hidden">
             <h1>Feedback</h1>
             <form class = "feedback" onSubmit = {handleSubmit}>
             <label>Email</label>

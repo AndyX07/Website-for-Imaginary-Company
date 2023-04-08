@@ -14,7 +14,6 @@ function App() {
 
   const [feedback, setFeedback] = useState('');
   const [email, setEmail] = useState('');
-
   useEffect(()=>{
     const fetchCart = async () => {
       const response = await axios.get('http://localhost:3500/cart');
@@ -46,10 +45,9 @@ function App() {
     const tempCart = [...cart, response.data];
     setCart(tempCart);
   }
-
   return (
     <div className="App">
-      <Nav />
+      <Nav/>
       <Routes>
         <Route path = "/" exact element = {<Home feedback = {feedback} setFeedback = {setFeedback} email = {email} setEmail = {setEmail} handleSubmit = {handleSubmit}/>}/>
         <Route path = "/services" element = {<Services handleAdd = {handleAdd}/>}/>
