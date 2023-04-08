@@ -2,6 +2,8 @@
 
 Website created using HTML, CSS, REACT.js, Axios API and JSON-server
 
+Preview (without backend): https://universalcomputersolutions.netlify.app/
+
 ![image](https://user-images.githubusercontent.com/128534708/227382467-288afec0-f791-4b7d-be1d-f9c0dc9ac4ff.png)
 
 ## Setup
